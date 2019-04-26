@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="signUp--lp">
+      <div id="signIn">
+        <div class="form--wrapper">
+          <h1>Welcome Back!</h1>
+          <label class="input--wrapper" for="email">Email
+            <input id="email">
+          </label>
+          <label class="input--wrapper" for="pword">Password
+            <input id="pword">
+          </label>
+          <button class="button" onclick="openModal()">Log In</button>
+          <p class="form--helper">Don't have an account? <button class="link" id="goToSignUp" onclick="transformSignUp()">Sign up now</button></p>
+        </div>
+      </div>
+      <div id="signUp">
+        <div class="form--wrapper">
+          <h1>Hello there!</h1>
+          <label class="input--wrapper" for="name">Name
+            <input id="name">
+          </label>
+          <label class="input--wrapper" for="email">Email
+            <input id="email">
+          </label>
+          <label class="input--wrapper" for="pword">Password
+            <input id="pword">
+          </label>
+          <button class="button" onclick="openModal()">Sign Up</button>
+          <p class="form--helper">Already have an account? <button class="link" id="goToSignIn" onclick="transformSignIn()">Log in</button></p>
+        </div>
+      </div>
+      <div id="img--form">
+        <img id="img" src="assets/focus_working.svg" alt="">
+        <!-- Image via ManyPixels -->
+      </div>
+      <div id="modal">
+        <div class="modal">
+          <h2>Thanks for checking this out!</h2>
+          <button class="button" onclick="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
